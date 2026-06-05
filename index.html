@@ -5,10 +5,62 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <title>Drum Kit in JavaScript</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+        <link rel="manifest" href="Images/site.webmanifest">
     </head>
     <body>
         <h1>Let's Play Some Beat</h1>
 
+        <div class="keys-container">
+            <div data-key="a" class="key">
+                <kbd>A</kbd>
+                <span class="sound">CLAP</span>
+            </div>
+            <div data-key="s" class="key">
+                <kbd>S</kbd>
+                <span class="sound">HIHAT</span>
+            </div>
+            <div data-key="d" class="key">
+                <kbd>D</kbd>
+                <span class="sound">KICK</span>
+            </div>
+            <div data-key="f" class="key">
+                <kbd>F</kbd>
+                <span class="sound">OPENHAT</span>
+            </div>
+            <div data-key="g" class="key">
+                <kbd>G</kbd>
+                <span class="sound">BOOM</span>
+            </div>
+            <div data-key="h" class="key">
+                <kbd>H</kbd>
+                <span class="sound">RIDE</span>
+            </div>
+            <div data-key="j" class="key">
+                <kbd>J</kbd>
+                <span class="sound">SNARE</span>
+            </div>
+            <div data-key="k" class="key">
+                <kbd>K</kbd>
+                <span class="sound">TOM</span>
+            </div>
+            <div data-key="l" class="key">
+                <kbd>L</kbd>
+                <span class="sound">TINK</span>
+            </div>
+        </div>
+
+        <audio data-key="a" src="Sounds/clap.wav"></audio>
+        <audio data-key="s" src="Sounds/hihat.wav"></audio>
+        <audio data-key="d" src="Sounds/kick.wav"></audio>
+        <audio data-key="f" src="Sounds/openhat.wav"></audio>
+        <audio data-key="g" src="Sounds/boom.wav"></audio>
+        <audio data-key="h" src="Sounds/ride.wav"></audio>
+        <audio data-key="j" src="Sounds/snare.wav"></audio>
+        <audio data-key="k" src="Sounds/tom.wav"></audio>
+        <audio data-key="l" src="Sounds/tink.wav"></audio>
 
         <script src="drum.js"></script>
     </body>
